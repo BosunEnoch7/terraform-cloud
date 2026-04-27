@@ -3,6 +3,7 @@ resource "aws_s3_bucket" "terraform_state_002" {
 
   tags = {
     Name = "terraform-state"
+    Env  = "test"
   }
 }
 
