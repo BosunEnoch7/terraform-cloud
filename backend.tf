@@ -37,10 +37,10 @@ resource "aws_dynamodb_table" "terraform_locks" {
 
 terraform {
   backend "s3" {
-    bucket         = "bosun-enoch-tfstate-001"
+    bucket         = "bosun-enoch-tfstate-002"
     key            = "project18/terraform.tfstate"
     region         = "us-east-1"
-    dynamodb_table = "terraform-locks"
+    dynamodb_table = "terraform-locks-002"
     encrypt        = true
   }
 }
